@@ -62,7 +62,7 @@ struct UserProfile: View {
                          .fontWeight(.bold)
                          .frame(alignment: .leading)
                         TextField(firstName ??  "", text: $FirstNameTextFieldText)
-                            .padding(.horizontal, 30)
+                            .frame(alignment: .leading)
                             .foregroundColor(.black)
                             .textFieldStyle(.roundedBorder)
                             
@@ -70,21 +70,18 @@ struct UserProfile: View {
                       .foregroundColor(.gray)
                       .fontWeight(.bold)
                         TextField(lastName ??  "", text: $LastNameTextFieldText)
-                            .padding(.horizontal, 30)
                             .foregroundColor(.black)
                             .textFieldStyle(.roundedBorder)
                      Text("Email")
                       .foregroundColor(.gray)
                       .fontWeight(.bold)
                         TextField(email ??  "", text: $EmailTextFieldText)
-                            .padding(.horizontal, 30)
                             .foregroundColor(.black)
                             .textFieldStyle(.roundedBorder)
                         Text("Phone Number (Optional)")
                          .foregroundColor(.gray)
                          .fontWeight(.bold)
                         TextField(phone ??  "", text: $PhoneTextFieldText)
-                            .padding(.horizontal, 30)
                             .foregroundColor(.black)
                             .textFieldStyle(.roundedBorder)
                         
@@ -97,18 +94,34 @@ struct UserProfile: View {
                     VStack(alignment:.leading) {
                         HStack {
                             Image(systemName: "checkmark")
+                                .padding(6)
+                                .foregroundColor(.white)
+                                .background(Color("Main2"))
+                                .clipShape(RoundedRectangle(cornerRadius: 10))
                             Text("Order Statuses")
                         }
                         HStack {
                             Image(systemName: "checkmark")
+                                .padding(6)
+                                .foregroundColor(.white)
+                                .background(Color("Main2"))
+                                .clipShape(RoundedRectangle(cornerRadius: 10))
                             Text("Order Statuses")
                         }
                         HStack {
                             Image(systemName: "checkmark")
+                                .padding(6)
+                                .foregroundColor(.white)
+                                .background(Color("Main2"))
+                                .clipShape(RoundedRectangle(cornerRadius: 10))
                             Text("Order Statuses")
                         }
                         HStack {
                             Image(systemName: "checkmark")
+                                .padding(6)
+                                .foregroundColor(.white)
+                                .background(Color("Main2"))
+                                .clipShape(RoundedRectangle(cornerRadius: 10))
                             Text("Order Statuses")
                         }
                         
